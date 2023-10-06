@@ -30,7 +30,14 @@ public class Main {
 				correctGuess = true;
 				System.out.println("Oikein!");
 				System.out.println("Yrityksiä " + attempts);
-	}
+			}
+			else if (guess.equalsIgnoreCase ("loppu"))
+			{
+				attempts = attempts - 1;
+				userWantsToQuit = true;
+				System.out.println("Peli loppui. Et arvannut oikein.");
+				System.out.println("Arvasit väärin " + attempts + " kertaa.");
+			}
 		
 }
 		
